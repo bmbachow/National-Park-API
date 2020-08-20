@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px red solid; */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 16px;
+ 
+}
+main {
+  max-width: 600px;
+  margin: auto;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.park-name {
+  border-top: 1px solid black;
+}
+
+li:first-child .park-name {
+  margin-top: 20px;
+}
+
+.park-name {
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+.park-description {
+  color: #444;
+}
+
+.park-website a:hover {
+  background: rgb(112, 205, 221);
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+input, select {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+}
+
+input {
+  max-width: 60px;
+}
+
+button {
+  margin: 10px 0 10px 0;
+  padding: 5px 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.js-error-msg {
+  color: red;
+}
+
+.js-please-wait {
+  color: rgb(19, 127, 228);
+} 
