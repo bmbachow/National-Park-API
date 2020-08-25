@@ -14,7 +14,7 @@ function formatQueryParams(params) {
 
 function fetchStateParkInfo(states, maxResults) {
 
-  const apiKey = '5sSsm7fFCYCquxRBY5P0IVUu9Y1OX70vBJb4algf';
+  const apiKey = 'u6K1ocedCPmLuGnYTpUvemCaApOGAj0vidPwS3TI';
   const baseURL = 'https://developer.nps.gov/api/v1/parks';
 
   const params = {
