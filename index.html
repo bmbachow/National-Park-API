@@ -3,31 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>National Parks API</title>
+  <title>Assignment: GET requests with complex data</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <main>
     <header>
       <h1>National Park Service Finder</h1>
     </header>
+    <div class="directions">
+      <p>To search for National Parks in multiple states, enter each state code separated by commas.</p>
+    </div>
     <form id="search-form">
-      <label for="select-date">State:</label>
-      <select id="js-select-state" name="select-state" placeholder="Select State..." required></select>
-      <label for="max-num-results">Limit number of results to:</label>
-      <input type="text" id="max-num-results" name="max-num-results" value="10" required>
+      <div class="state">
+        <label for="js-select-state">State Code</label>
+        <input type="text" id="js-select-state" name="select-state" placeholder="e.g. CA, NY, FL..." required></select>
+      </div>
+      <div class="number">
+        <label for="max-num-results">Results</label>
+        <input type="number" id="max-num-results" name="max-num-results" value="10" required>
+      </div>
       <button type="submit">Submit</button>
     </form>
+
+    <div class="glossary">
+      <label for="glossary-dropdown">Glossary of State Codes</label>
+      <select id="js-glossary" name="glossary-dropdown"></select>
+    </div>
+
     <p class="js-error-msg hidden"></p>
     <p class="js-please-wait hidden"></p>
 
-    <section id="js-results" class="hidden">
+    <section id="js-search-results hidden">
       <ul id="js-list-results"></ul>
     </section>
+
   </main>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
   <script src="store.js"></script>
   <script src="script.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: 1px red solid; */
 }
 
 body {
@@ -9,10 +8,33 @@ body {
   padding: 16px;
  
 }
+
+.directions {
+  color: rgb(187, 29, 29);
+}
+
 main {
   max-width: 600px;
   margin: auto;
 }
+
+form {
+  display: inline-block;
+  max-width: 350px;
+}
+
+div {
+  display: inline-block;
+}
+
+div.number {
+  margin: 0 0 0 5px;
+}
+
+img {
+  width: 100%;
+}
+
 ul {
   list-style-type: none;
   padding-left: 0;
@@ -45,22 +67,35 @@ li:first-child .park-name {
 
 label {
   display: block;
-  margin: 5px 0;
-  font-size: 0.9rem;
-}
-
-input, select {
-  display: block;
-  margin: 0 0 10px 0;
-  padding: 5px 10px;
+  margin: 0 5px 5px 5px;
+  font-size: 0.8rem;
 }
 
 input {
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 5px 10px;
+  max-width: 150px;
+}
+
+input#max-num-results {
   max-width: 60px;
 }
 
-button {
-  margin: 10px 0 10px 0;
+select {
+  box-sizing: content-box;
+  padding: 5px 10px;
+  color: rgb(19, 127, 228);
+}
+
+.glossary {
+  display: inline-block;
+  color: rgb(19, 127, 228);
+}
+
+button { 
+  display: inline-block;
+  margin: 10px 0 10px 5px;
   padding: 5px 10px;
 }
 
@@ -74,4 +109,11 @@ button {
 
 .js-please-wait {
   color: rgb(19, 127, 228);
-} 
+}
+
+
+@media screen and (min-width: 550px) {
+  button {
+    margin: 10px 40px 10px 5px;
+  }
+}
